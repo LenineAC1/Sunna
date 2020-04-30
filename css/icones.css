@@ -1,0 +1,327 @@
+.olho{
+    position: absolute;
+    left: 94%;
+    width: 65px;
+    height: 60px;
+    z-index: 200;
+    transition: .2s;
+}
+.olho:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+#irmao_urso {
+    background-image: url("irmao urso#png");
+    position: absolute;
+    left: 642px;
+    top: 403px;
+    width: 105px;
+    height: 134px;
+    z-index: 36;
+
+}
+#DN {
+    background-image: url("DN#png");
+    position: absolute;
+    left: 29px;
+    top: 274px;
+    width: 295px;
+    height: 65px;
+    z-index: 35;
+}
+#Avatar {
+    background-blend-mode: multiply;
+    position: absolute;
+    left: 771px;
+    top: 456px;
+    width: 153px;
+    height: 173px;
+    z-index: 34;
+}
+#Naruto {
+    background-image: url("Naruto#png");
+    position: absolute;
+    left: 468px;
+    top: 14px;
+    width: 112px;
+    height: 124px;
+    z-index: 33;
+}
+#harry_potter {
+    background-image: url("harry potter#png");
+    position: absolute;
+    left: 1048px;
+    top: 97px;
+    width: 116px;
+    height: 119px;
+    z-index: 32;
+}
+#Teen_Wolf {
+    background-image: url("Teen Wolf#png");
+    position: absolute;
+    left: 1143px;
+    top: 248px;
+    width: 200px;
+    height: 224px;
+    z-index: 31;
+}
+#SAB {
+    background-image: url("SAB#png");
+    position: absolute;
+    left: 400px;
+    top: 293px;
+    width: 351px;
+    height: 131px;
+    z-index: 30;
+}
+#Skins {
+    background-image: url("Skins#png");
+    position: absolute;
+    left: 30px;
+    top: 135px;
+    width: 318px;
+    height: 180px;
+    z-index: 29;
+}
+#Lucifer {
+    background-image: url("Lucifer#png");
+    position: absolute;
+    left: 708px;
+    top: 190px;
+    width: 329px;
+    height: 215px;
+    z-index: 28;
+}
+#Friends {
+    background-image: url("Friends#png");
+    position: absolute;
+    left: 788px;
+    top: 399px;
+    width: 344px;
+    height: 116px;
+    z-index: 27;
+}
+#The_guadiam {
+    background-image: url("The guadiam#png");
+    position: absolute;
+    left: 864px;
+    top: 198px;
+    width: 293px;
+    height: 161px;
+    z-index: 26;
+}
+#SOA {
+    background-image: url("SOA#png");
+    position: absolute;
+    left: 864px;
+    top: 51px;
+    width: 142px;
+    height: 187px;
+    z-index: 25;
+}
+#The_NBHD {
+    background-image: url("The NBHD#png");
+    position: absolute;
+    left: 1173px;
+    top: 464px;
+    width: 139px;
+    height: 140px;
+    z-index: 24;
+}
+#The_1975 {
+    background-image: url("The 1975#png");
+    position: absolute;
+    left: 71px;
+    top: 1px;
+    width: 309px;
+    height: 160px;
+    z-index: 23;
+}
+#Lana_del_Rey {
+    background-image: url("Lana del Rey#png");
+    position: absolute;
+    left: 48px;
+    top: 306px;
+    width: 267px;
+    height: 337px;
+    z-index: 22;
+}
+#Frank_Ocean {
+    background-image: url("Frank Ocean#png");
+    position: absolute;
+    left: 438px;
+    top: 438px;
+    width: 153px;
+    height: 153px;
+    z-index: 21;
+}
+#Arctic_Monkeys {
+    background-image: url("Arctic Monkeys#png");
+    position: absolute;
+    left: 1035px;
+    top: -19px;
+    width: 292px;
+    height: 226px;
+    z-index: 20;
+}
+#percy {
+    background-image: url("percy#png");
+    position: absolute;
+    left: 870px;
+    top: 328px;
+    width: 115px;
+    height: 115px;
+    z-index: 190;
+}
+#clube_dos_5 {
+    background-image: url("clube dos 5#png");
+    position: absolute;
+    left: 159px;
+    top: -6px;
+    width: 304px;
+    height: 102px;
+    z-index: 18;
+}
+#Blue_Valentine {
+    background-image: url("Blue Valentine#png");
+    position: absolute;
+    left: 866px;
+    top: -2px;
+    width: 197px;
+    height: 91px;
+    z-index: 17;
+}
+#awalk {
+    background-image: url("awalk#png");
+    position: absolute;
+    left: 1129px;
+    top: 217px;
+    width: 194px;
+    height: 87px;
+    z-index: 160;
+}
+#Shrek {
+    background-image: url("Shrek#png");
+    position: absolute;
+    left: 1165px;
+    top: 155px;
+    width: 105px;
+    height: 102px;
+    z-index: 150;
+}
+#monstros {
+    background-image: url("monstros#png");
+    position: absolute;
+    left: 258px;
+    top: 519px;
+    width: 147px;
+    height: 108px;
+    z-index: 14;
+}
+#lilo {
+    background-image: url("lilo#png");
+    position: absolute;
+    left: 693px;
+    top: -2px;
+    width: 281px;
+    height: 53px;
+    z-index: 13;
+}
+#kill_bill {
+    background-image: url("kill bill#png");
+    position: absolute;
+    left: 1px;
+    top: 28px;
+    width: 233px;
+    height: 156px;
+    z-index: 120;
+}
+#got {
+    background-image: url("got#png");
+    position: absolute;
+    left: 602px;
+    top: 518px;
+    width: 205px;
+    height: 80px;
+    z-index: 11;
+}
+#Leona {
+    background-image: url("Leona#png");
+    position: absolute;
+    left: 653px;
+    top: 35px;
+    width: 216px;
+    height: 203px;
+    z-index: 10;
+}
+#Jinx {
+    background-image: url("Jinx#png");
+    position: absolute;
+    left: 388px;
+    top: 65px;
+    width: 310px;
+    height: 209px;
+    z-index: 9;
+}
+#psico {
+    background-image: url("psico#png");
+    position: absolute;
+    left: 465px;
+    top: 195px;
+    width: 119px;
+    height: 128px;
+    z-index: 210;
+}
+#touro {
+    background-image: url("touro#png");
+    position: absolute;
+    left: 299px;
+    top: 412px;
+    width: 116px;
+    height: 119px;
+    z-index: 7;
+}
+#Twitter {
+    background-image: url("Twitter#png");
+    position: absolute;
+    left: 557px;
+    top: 79px;
+    width: 97px;
+    height: 79px;
+    z-index: 100;
+}
+#batata {
+    background-image: url("batata#png");
+    position: absolute;
+    left: 989px;
+    top: 499px;
+    width: 90px;
+    height: 111px;
+    z-index: 5;
+}
+
+
+#dog {
+    background-image: url("dog.png");
+    position: absolute;
+    left: 9px;
+    top: 340px;
+    width: 90px;
+    height: 80px;
+    z-index: 47;
+}
+
+#family {
+    background-image: url("family.png");
+    position: absolute;
+    width:147px;
+    height: 130px;
+    z-index: 26;
+    left: 602px;
+    top: 518px;
+}
+
+
+.teste{
+    min-height: 85% !important;
+}

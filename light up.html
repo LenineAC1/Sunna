@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/icon.png">
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/raquel.css">
+    <link rel="stylesheet" type="text/css" href="css/icones.css">
+    <title>Raquel</title>
+</head>
+<body>
+<audio id="Rmusic" src="sound/nights.ogg" type="audio/ogg"></audio>
+<audio id="Amusic" src="sound/thebeach.ogg" type="audio/ogg"></audio>
+<audio id="Qmusic" src="sound/fallingforyou.ogg" type="audio/ogg"></audio>
+<audio id="Umusic" src="sound/iwannabeyours.ogg" type="audio/ogg"></audio>
+<audio id="Emusic" src="sound/borntodie.ogg" type="audio/ogg"></audio>
+<audio id="Lmusic" src="sound/selfcontrol.ogg" type="audio/ogg"></audio>
+<div id="kk" style="width: 100%; height: 100%; overflow: hidden; position: absolute" onclick="check()">
+    <img src="img/vison.png" class="olho" style="opacity: 0.5">
+    <div >
+    <img src="img/R.png" id="R" class="icones open_modal_icon letra R">
+    <img src="img/A.png" id="A" class="icones open_modal_icon letra A">
+    <img src="img/Q.png" id="Q" class="icones open_modal_icon letra Q">
+    <img src="img/U.png" id="U" class="icones open_modal_icon letra U">
+    <img src="img/E.png" id="E" class="icones open_modal_icon letra E">
+    <img src="img/L.png" id="L" class="icones open_modal_icon letra L">
+    </div>
+    <div style="opacity: 0.07;">
+        <img src="img/Arctic%20Monkeys.png" id="Arctic_Monkeys" class="icones open_modal_icon">
+        <img src="img/Avatar.png" id="Avatar" class="icones open_modal_icon">
+        <img src="img/awalk.png" id="awalk" class="icones open_modal_icon">
+        <img src="img/batata.png" id="batata" class="icones open_modal_icon">
+        <img src="img/Blue%20Valentine.png" id="Blue_Valentine" class="icones open_modal_icon">
+        <img src="img/clube%20dos%205.png" id="clube_dos_5" class="icones open_modal_icon">
+        <img src="img/DN.png" id="DN" class="icones open_modal_icon">
+        <img src="img/Frank%20Ocean.png" id="Frank_Ocean" class="icones open_modal_icon">
+        <img src="img/Friends.png" id="Friends" class="icones open_modal_icon">
+        <img src="img/HP.png" id="harry_potter" class="icones open_modal_icon">
+        <img src="img/irmao%20urso.png" id="irmao_urso" class="icones open_modal_icon">
+        <img src="img/Jinx.png" id="Jinx" class="icones open_modal_icon">
+        <img src="img/kill%20bill.png" id="kill_bill" class="icones open_modal_icon">
+        <img src="img/Lana%20del%20Rey.png" id="Lana_del_Rey" class="icones open_modal_icon">
+        <img src="img/Leona.png" id="Leona" class="icones open_modal_icon">
+        <img src="img/lilo.png" id="lilo" class="icones open_modal_icon">
+        <img src="img/Lucifer.png" id="Lucifer" class="icones open_modal_icon">
+        <img src="img/monstros.png" id="monstros" class="icones open_modal_icon">
+        <img src="img/Naruto.png" id="Naruto" class="icones open_modal_icon">
+        <img src="img/percy.png" id="percy" class="icones open_modal_icon">
+        <img src="img/psico.png" id="psico" class="icones open_modal_icon">
+        <img src="img/SAB.png" id="SAB" class="icones open_modal_icon">
+        <img src="img/Shrek.png" id="Shrek" class="icones open_modal_icon">
+        <img src="img/Skins.png" id="Skins" class="icones open_modal_icon">
+        <img src="img/SOA.png" id="SOA" class="icones open_modal_icon">
+        <img src="img/Teen%20Wolf.png" id="Teen_Wolf" class="icones open_modal_icon">
+        <img src="img/The%20guadiam.png" id="The_guadiam" class="icones open_modal_icon">
+        <img src="img/The%201975.png" id="The_1975" class="icones open_modal_icon">
+        <img src="img/The%20NBHD.png" id="The_NBHD" class="icones open_modal_icon">
+        <img src="img/touro.png" id="touro" class="icones open_modal_icon">
+        <img src="img/Twitter.png" id="Twitter" class="icones open_modal_icon">
+        <img src="img/dog.png" id="dog" class="icones open_modal_icon">
+        <img src="img/family.png" id="family" class="icones open_modal_icon fami">
+    </div>
+</div>
+
+<!--                                 MODAIS                           -->
+<div>
+    <!-- Modal Structure Arctic_Monkeys-->
+    <div id="modalArctic_Monkeys" class="modal testegrad iconmodal">
+        <div class="modal-content" style="color: white;font-family: MontserratL;">
+            <h4 class="center" style="margin-bottom: 30px">Artic Monkeys</h4>
+
+        </div>
+    </div>
+
+    <!-- Modal Structure Avatar-->
+    <div id="modalAvatar" class="modal testegrad iconmodal">
+        <div class="modal-content" style="color: white;font-family: MontserratL;overflow-y:hidden;">
+            <h4 class="center" style="margin-bottom: 30px">Avatar</h4>
+
+        </div>
+    </div>
+
+    <!-- Modal Structure batata-->
+    <div id="modalbatata" class="modal testegrad iconmodal">
+        <div class="modal-content" style="color: white;font-family: MontserratL;">
+            <h4 class="center" style="margin-bottom: 30px">Batata</h4>
+
+        </div>
+    </div>
+
+    <!-- Modal Structure awalk-->
+    <div id="modalawalk" class="modal testegrad iconmodal">
+        <div class="modal-content" style="color: white;font-family: MontserratL;">
+            <h4 class="center" style="margin-bottom: 30px">A walk to remember</h4>
+
+        </div>
+    </div>
+
+    <!-- Modal Structure Blue_Valentine-->
+    <div id="modalBlue_Valentine" class="modal testegrad iconmodal">
+        <div class="modal-content" style="color: white;font-family: MontserratL;">
+            <h4 class="center" style="margin-bottom: 30px">Blue Valentine</h4>
+
+        </div>
+    </div>
+
+    <!-- Modal Structure clube_dos_5-->
+    <div id="modalclube_dos_5" class="modal testegrad iconmodal">
+        <div class="modal-content" style="color: white;font-family: MontserratL;">
+            <h4 class="center" style="margin-bottom: 30px">The breakfast club</h4>
+
+        </div>
+    </div>
+
+    <!-- Modal Structure DN-->
+    <div id="modalDN" class="modal testegrad iconmodal">
+        <div class="modal-content" style="color: white;font-family: MontserratL;">
+            <h4 class="center" style="margin-bottom: 30px">Death note</h4>
+
+        </div>
+    </div>
+
+    <!-- Modal Structure Frank_Ocean-->
+    <div id="modalFrank_Ocean" class="modal testegrad iconmodal">
+        <div class="modal-content" style="color: white;font-family: MontserratL;">
+            <h4 class="center" style="margin-bottom: 30px">Frank Ocean</h4>
+
+        </div>
+    </div>
+
+    <!-- Modal Structure Friends-->
+    <div id="modalFriends" class="modal testegrad iconmodal">
+        <div class="modal-content" style="color: white;font-family: MontserratL;">
+            <h4 class="center" style="margin-bottom: 30px">Friends</h4>
+
+        </div>
+    </div>
+
+    <!-- Modal Structure harry_potter-->
+    <div id="modalharry_potter" class="modal testegrad iconmodal">
+        <div class="modal-content" style="color: white;font-family: MontserratL;">
+            <h4 class="center" style="margin-bottom: 30px">Harry potter</h4>
+
+        </div>
+    </div>
+
+    <!-- Modal Structure kill_bill-->
+    <div id="modalkill_bill" class="modal testegrad iconmodal">
+        <div class="modal-content" style="color: white;font-family: MontserratL;">
+            <h4 class="center" style="margin-bottom: 30px">Kill Bill</h4>
+
+        </div>
+    </div>
+
+    <!-- Modal Structure irmao_urso-->
+    <div id="modalirmao_urso" class="modal testegrad iconmodal">
+        <div class="modal-content" style="color: white;font-family: MontserratL;">
+            <h4 class="center" style="margin-bottom: 30px">Irmão urso</h4>
+
+        </div>
+    </div>
+
+    <!-- Modal Structure Jinx-->
+    <div id="modalJinx" class="modal testegrad iconmodal">
+        <div class="modal-content" style="color: white;font-family: MontserratL;">
+            <h4 class="center" style="margin-bottom: 30px">Jinx</h4>
+
+        </div>
+    </div>
+
+    <!-- Modal Structure Lana_del_Rey-->
+    <div id="modalLana_del_Rey" class="modal testegrad iconmodal">
+        <div class="modal-content" style="color: white;font-family: MontserratL;">
+            <h4 class="center" style="margin-bottom: 30px">Lana del Rey</h4>
+
+        </div>
+    </div>
+
+    <!-- Modal Structure Leona-->
+    <div id="modalLeona" class="modal testegrad iconmodal">
+        <div class="modal-content" style="color: white;font-family: MontserratL;">
+            <h4 class="center" style="margin-bottom: 30px">Leona</h4>
+
+        </div>
+    </div>
+
+    <!-- Modal Structure lilo-->
+    <div id="modallilo" class="modal testegrad iconmodal">
+        <div class="modal-content" style="color: white;font-family: MontserratL;">
+            <h4 class="center" style="margin-bottom: 30px">Lilo & Stitch</h4>
+
+        </div>
+    </div>
+
+    <!-- Modal Structure Lucifer-->
+    <div id="modalLucifer" class="modal testegrad iconmodal">
+        <div class="modal-content" style="color: white;font-family: MontserratL;">
+            <h4 class="center" style="margin-bottom: 30px">Lucifer</h4>
+
+        </div>
+    </div>
+
+    <!-- Modal Structure monstros-->
+    <div id="modalmonstros" class="modal testegrad iconmodal">
+        <div class="modal-content" style="color: white;font-family: MontserratL;">
+            <h4 class="center" style="margin-bottom: 30px">Monstros S.A.</h4>
+
+        </div>
+    </div>
+
+    <!-- Modal Structure Naruto-->
+    <div id="modalNaruto" class="modal testegrad iconmodal" >
+        <div class="modal-content" style="color: white;font-family: MontserratL">
+            <h4 class="center" style="margin-bottom: 30px">Naruto</h4>
+        </div>
+    </div>
+
+    <!-- Modal Structure percy-->
+    <div id="modalpercy" class="modal testegrad iconmodal">
+        <div class="modal-content" style="color: white;font-family: MontserratL;">
+            <h4 class="center" style="margin-bottom: 30px">Percy Jackson</h4>
+
+        </div>
+    </div>
+
+    <!-- Modal Structure psico-->
+    <div id="modalpsico" class="modal testegrad iconmodal">
+        <div class="modal-content" style="color: white;font-family: MontserratL;">
+            <h4 class="center" style="margin-bottom: 30px">Psicologia</h4>
+
+        </div>
+    </div>
+
+    <!-- Modal Structure SAB-->
+    <div id="modalSAB" class="modal testegrad iconmodal">
+        <div class="modal-content" style="color: white;font-family: MontserratL;">
+            <h4 class="center" style="margin-bottom: 30px"></h4>
+
+        </div>
+    </div>
+
+    <!-- Modal Structure Shrek-->
+    <div id="modalShrek" class="modal testegrad iconmodal">
+        <div class="modal-content" style="color: white;font-family: MontserratL;">
+            <h4 class="center" style="margin-bottom: 30px">Shrek</h4>
+
+        </div>
+    </div>
+
+    <!-- Modal Structure Skins-->
+    <div id="modalSkins" class="modal testegrad iconmodal">
+        <div class="modal-content" style="color: white;font-family: MontserratL;">
+            <h4 class="center" style="margin-bottom: 30px">Skins</h4>
+
+        </div>
+    </div>
+
+    <!-- Modal Structure SOA-->
+    <div id="modalSOA" class="modal testegrad iconmodal">
+        <div class="modal-content" style="color: white;font-family: MontserratL;">
+            <h4 class="center" style="margin-bottom: 30px">Sons of Anarchy</h4>
+
+        </div>
+    </div>
+
+    <!-- Modal Structure Teen_Wolf-->
+    <div id="modalTeen_Wolf" class="modal testegrad iconmodal">
+        <div class="modal-content" style="color: white;font-family: MontserratL;">
+            <h4 class="center" style="margin-bottom: 30px">Teen Wolf</h4>
+
+        </div>
+    </div>
+
+    <!-- Modal Structure The_guadiam-->
+    <div id="modalThe_guadiam" class="modal testegrad iconmodal">
+        <div class="modal-content" style="color: white;font-family: MontserratL;">
+            <h4 class="center" style="margin-bottom: 30px">The guardiam</h4>
+
+        </div>
+    </div>
+
+    <!-- Modal Structure The_1975-->
+    <div id="modalThe_1975" class="modal testegrad iconmodal">
+        <div class="modal-content" style="color: white;font-family: MontserratL;">
+            <h4 class="center" style="margin-bottom: 30px">The 1975</h4>
+
+        </div>
+    </div>
+
+    <!-- Modal Structure The_NBHD-->
+    <div id="modalThe_NBHD" class="modal testegrad iconmodal">
+        <div class="modal-content" style="color: white;font-family: MontserratL;">
+            <h4 class="center" style="margin-bottom: 30px">The neighbourhood </h4>
+
+        </div>
+    </div>
+
+    <!-- Modal Structure touro-->
+    <div id="modaltouro" class="modal testegrad iconmodal">
+        <div class="modal-content" style="color: white;font-family: MontserratL;">
+            <h4 class="center" style="margin-bottom: 30px">Touro</h4>
+
+        </div>
+    </div>
+
+    <!-- Modal Structure Twitter-->
+    <div id="modalTwitter" class="modal testegrad iconmodal">
+        <div class="modal-content" style="color: white;font-family: MontserratL;">
+            <h4 class="center" style="margin-bottom: 30px">Twitter</h4>
+
+        </div>
+    </div>
+
+    <!-- Modal Structure dog-->
+    <div id="modaldog" class="modal testegrad iconmodal">
+        <div class="modal-content" style="color: white;font-family: MontserratL;">
+            <h4 class="center" style="margin-bottom: 30px">Koda</h4>
+
+        </div>
+    </div>
+
+    <!-- Modal Structure family-->
+    <div id="modalfamily" class="modal testegrad iconmodal">
+        <div class="modal-content" style="color: white;font-family: MontserratL;">
+            <h4 class="center" style="margin-bottom: 30px">Familia</h4>
+            <video id="familyvideo" src="img/Inside/family/1.webm" loop style="width: 250px;display: block;margin-left: auto;margin-right: auto;margin-bottom: 25px"></video>
+        </div>
+    </div>
+</div>
+<!--                               FIM  MODAIS                           -->
+
+<!--                                 MODAIS LETRA                           -->
+<div>
+<!-- Modal R -->
+<div id="modalR" class="modal bottom-sheet black">
+    <div class="modal-content" style="font-family: Frank;color:white;">
+        <div class="fullscreen-bg">
+            <video id="Rvideo" muted loop class="fullscreen-bg__video">
+                <source src="img/Inside/R/Nights.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+        <h4 >NIGHTS</h4>
+        <p><span id="1l1">New beginnings, ahh<br></span>
+            <span id="1l2">New beginnings, wake up akh<br></span>
+            <span id="1l3">The sun's going down<br></span>
+            <span id="1l4">Time to start your day bruh<br></span>
+            <span id="1l5">Can't keep being laid off<br></span>
+            <span id="1l6">Know you need the money if you gon' survive<br></span>
+            <span id="1l7">The every night shit, every day shit<br></span>
+            <span id="1l8">Dropping baby off at home before my night shift<br></span>
+            <span id="1l9">You know I can't hear none of that spend the night shit<br></span>
+            <span id="1l11">That kumbaya shit<br></span>
+            <span id="1l12">Wanna see nirvana, but don't want to die yet<br></span>
+            <span id="1l13">Wanna feel that na na though, could you come by?<br></span>
+            <span id="1l14">Fuck with me after my shift<br></span>
+            <span id="1l15">Know them boys wanna see me broke down and shit<br></span>
+            <span id="1l16">Bummed out and shit, stressed out and shit<br></span>
+            <span id="1l17">That's every day shit<br></span>
+            <span id="1l18">Shut the fuck up I don’t want your conversation<br></span>
+            <span id="1l19">Rolling marijuana that's a cheap vacation<br></span>
+            <span id="1l20">My every day shit, every night shit, my every day shit<br></span>
+            <span id="1l21">(Every night shit, night shit, night shit, night shit)<br></span></p>
+    </div>
+</div>
+
+<!-- Modal A -->
+<div id="modalA" class="modal bottom-sheet testegrad antiflick-modalA">
+    <div class="modal-content" style="font-family: 'Delicate Strict A '; font-size: 3vh; color: white">
+        <div style="position: absolute">
+            <video id="Avideo" muted loop  style="position: relative; z-index: -100;margin-left: 370px; height: 290px;box-shadow: 0 0 300px 5px rgb(0,0,0);">
+                <source src="img/Inside/A/fall.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+        <h4>THE BEACH</h4>
+        <div class="esquerda left" style="margin-bottom: 40px">
+        <p><span id="2l1">I'm sick, and I'm tired too<br></span>
+            <span id="2l2">I can admit, I am not fireproof<br></span>
+                <span id="2l3">I feel it burning me<br></span>
+                <span id="2l4">I feel it burning you<br></span>
+                <span id="2l5">I hope I don't murder me<br></span>
+                <span id="2l6">I hope I don't burden you<br></span>
+                <span id="2l7">If I do, If I do<br></span></p>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Q -->
+<div id="modalQ" class="modal bottom-sheet testegrad antiflick-modalQ">
+    <div class="modal-content" style="font-family: 'Helvetica Neue Q'; font-size:  3vh; color: white">
+	<div style="position: absolute">
+            <video id="Qvideo" muted loop  style="position: relative; z-index: -100;margin-left: 500px; height: 340px;box-shadow: 0 0 15px 5px #000000;">
+                <source src="img/Inside/Q/l.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+        <h4>FALLINGFORYOU</h4>
+        <div class="esquerda left" style="margin-bottom: 40px">
+        <p><span id="3l1">I'm caught on your coat again<br></span>
+            <span id="3l2">You said, "Oh no, it's fine"<br></span>
+            <span id="3l3">I read between the lines and touched your leg again (again)<br></span>
+            <span id="3l4">I'll take it one day at a time<br></span>
+            <span id="3l5">Soon you will be mine, oh<br></span>
+            <span id="3l6">But I want you now (I want you now)<br></span>
+            <span id="3l7">When the smoke is in your eyes, you look so alive<br></span>
+            <span id="3l8">Do you fancy sitting down with me? Maybe<br></span>
+            <span id="3l9">'Cause you're all I need<br></span></p>
+        </div>
+    </div>
+</div>
+
+<!-- Modal U -->
+<div id="modalU" class="modal bottom-sheet testegrad antiflick-modalU" >
+    <div class="modal-content" style="font-family: U; font-size: 3vh; color: white;">
+        <div style="position: absolute">
+            <video id="Uvideo" muted loop  style="position: relative; z-index: -100;margin-left: 370px; height: 190px;box-shadow: 0 0 15px 5px #000000;">
+                <source src="img/Inside/U/coffe.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+        <h4>I WANNA BE YOURS</h4>
+        <div class="esquerda left" style="margin-bottom: 40px">
+        <p><span id="4l1">If you like your coffee hot</span><br>
+            <span id="4l2" >Let me be your coffee pot</span><br>
+            <span id="4l3">You call the shots, babe</span><br>
+            <span id="4l4">I just wanna be yours<br></span></p>
+        </div>
+    </div>
+</div>
+
+<!-- Modal E -->
+<div id="modalE" class="modal bottom-sheet antiflick-modalE  testegrad">
+    <div class="modal-content" style="font-family: 'Steelfish Rg E';font-size: 4vh; color: white;">
+        <div style="position: absolute">
+            <video id="Evideo" muted loop  style="position: relative; z-index: -100; height: 320px; margin: 0px 0 0 390px; box-shadow: 0 0 150px 60px rgb(0,0,0);">
+                <source src="img/Inside/E/clip.mov">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+        <h4>BORN TO DIE</h4>
+        <p><span id="5l1">Don't make me sad, don't make me cry<br></span>
+            <span id="5l2">Sometimes love is not enough and the road gets tough<br></span>
+            <span id="5l3">I don't know why<br></span>
+            <span id="5l4">Keep making me laugh – Let's go get high<br></span>
+            <span id="5l5">The road is long, we carry on<br></span>
+            <span id="5l6">Try to have fun in the meantime<br></span></p>
+    </div>
+</div>
+
+<!-- Modal L -->
+<div id="modalL" class="modal bottom-sheet testegrad antiflick-modalL">
+    <div class="modal-content" style="font-family: Frank; color: white;">
+        <div style="position: absolute">
+            <video id="Lvideo" muted loop  style="position: relative; z-index: -100; height: 210px; margin: 0px 0 0 490px; box-shadow: 0 0 150px 60px rgb(0,0,0);">
+                <source src="img/Inside/L/drive.mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+        <h4>SELF CONTROL</h4>
+        <p><span id="6l1">I, I, I know you gotta leave, leave, leave<br></span>
+            <span id="6l2">Take down some summer time<br></span>
+            <span id="6l3">Give up, just tonight, night, night<br></span>
+            <span id="6l4">I, I, I know you got someone comin'<br></span>
+            <span id="6l5">You're spittin' game, know you got it<br></span></p>
+    </div>
+</div>
+</div>
+<!--                               FIM  MODAIS                           -->
+<script>
+    $(document).ready(function () {
+        $('.collapsible').collapsible();
+        $('.modal').modal();
+        $('.icones').mouseover(function () {
+            var id = "#" + this.id;
+            $(id).css({
+                'transform': 'scale(1.5)',
+                'transition': 'transform .2s',
+                'cursor': 'pointer'
+            });
+        });
+
+        $('.icones').mouseout(function () {
+            var id = "#" + this.id;
+            $(id).css({
+                'transform': 'scale(1)',
+                'transition': 'transform .2s',
+                'cursor': 'default'
+            });
+        });
+
+        $('.olho').click(function () {
+            if ($(this).attr('src') == 'img/vison.png') {
+                $(this).attr('src', 'img/visonNO.png');
+                $('#R').fadeOut(190);
+                $('#A').fadeOut(190);
+                $('#Q').fadeOut(190);
+                $('#U').fadeOut(190);
+                $('#E').fadeOut(190);
+                $('#L').fadeOut(190);
+            } else {
+                $(this).attr('src', 'img/vison.png');
+                $('#R').fadeIn(190);
+                $('#A').fadeIn(190);
+                $('#Q').fadeIn(190);
+                $('#U').fadeIn(190);
+                $('#E').fadeIn(190);
+                $('#L').fadeIn(190);
+            }
+
+        });
+
+
+
+        $('.open_modal_icon').click(function () {
+
+            var idModal = "#modal" + this.id;
+            var idMusica = "#"+this.id+"music";
+            var idVideo = "#"+this.id+"video";
+            $(idModal).modal({
+
+                complete: function() {
+                    try {
+                        if (idModal == "#modalfamily"){
+                            $(idVideo).get(0).pause();
+                            $(idVideo).get(0).currentTime = 0;
+                        }else {
+                            $(idMusica).get(0).pause();
+                            $(idVideo).get(0).pause();
+                            $(idMusica).get(0).currentTime = 0;
+                            $(idVideo).get(0).currentTime = 0;
+                            $("span").css("font-size", "100%");
+                            for (var i = 0; i < timeouts.length; i++) {
+                                clearTimeout(timeouts[i]);
+                            }
+                        }
+                    }catch (e) {
+
+                    }
+
+                }
+            });
+            var timeouts = [];
+            $(idModal).modal('open');
+
+            if (this.className.match("letra")){
+                $(idMusica).get(0).play();
+                $(idVideo).get(0).play();
+                if (this.className.match("R")) {
+                    timeouts.push(setTimeout(function(){
+                        $("#1l1").css({"font-size":"160%", "transition":".3s"});
+                        $("#1l1").addClass('contorno');
+                    }, 100));
+                    timeouts.push(setTimeout(function(){
+                        $("#1l1").css({"font-size":"100%", "transition":".3s"});
+                        $("#1l1").removeClass('contorno');
+                        $("#1l2").css({"font-size":"160%", "transition":".3s"});
+                        $("#1l2").addClass('contorno');
+                    }, 3200));
+                    timeouts.push(setTimeout(function(){
+                        $("#1l2").css({"font-size":"100%", "transition":".3s"});
+                        $("#1l3").css({"font-size":"160%", "transition":".3s"});
+                    }, 5400));
+                    timeouts.push(setTimeout(function(){
+                        $("#1l3").css({"font-size":"100%", "transition":".3s"});
+                        $("#1l4").css({"font-size":"160%", "transition":".3s"});
+                    }, 7700));
+                    timeouts.push(setTimeout(function(){
+                        $("#1l4").css({"font-size":"100%", "transition":".3s"});
+                        $("#1l5").css({"font-size":"160%", "transition":".3s"});
+                    }, 10500));
+                    timeouts.push(setTimeout(function(){
+                        $("#1l5").css({"font-size":"100%", "transition":".3s"});
+                        $("#1l6").css({"font-size":"160%", "transition":".3s"});
+                    }, 12700));
+                    timeouts.push(setTimeout(function(){
+                        $("#1l6").css({"font-size":"100%", "transition":".3s"});
+                        $("#1l7").css({"font-size":"160%", "transition":".3s"});
+                    }, 15700));
+                    timeouts.push(setTimeout(function(){
+                        $("#1l7").css({"font-size":"100%", "transition":".3s"});
+                        $("#1l8").css({"font-size":"160%", "transition":".3s"});
+                    }, 18800));
+                    timeouts.push(setTimeout(function(){
+                        $("#1l8").css({"font-size":"100%", "transition":".3s"});
+                        $("#1l9").css({"font-size":"160%", "transition":".3s"});
+                    }, 21700));
+                    timeouts.push(setTimeout(function(){
+                        $("#1l9").css({"font-size":"100%", "transition":".3s"});
+                        $("#1l11").css({"font-size":"160%", "transition":".3s"});
+                    }, 24700));
+                    timeouts.push(setTimeout(function(){
+                        $("#1l11").css({"font-size":"100%", "transition":".3s"});
+                        $("#1l12").css({"font-size":"160%", "transition":".3s"});
+                    }, 26200));
+                    timeouts.push(setTimeout(function(){
+                        $("#1l12").css({"font-size":"100%", "transition":".3s"});
+                        $("#1l13").css({"font-size":"160%", "transition":".3s"});
+                    }, 29300));
+                    timeouts.push(setTimeout(function(){
+                        $("#1l13").css({"font-size":"100%", "transition":".3s"});
+                        $("#1l14").css({"font-size":"160%", "transition":".3s"});
+                    }, 31600));
+                    timeouts.push(setTimeout(function(){
+                        $("#1l14").css({"font-size":"100%", "transition":".3s"});
+                        $("#1l15").css({"font-size":"160%", "transition":".3s"});
+                    }, 33700));
+                    timeouts.push(setTimeout(function(){
+                        $("#1l15").css({"font-size":"100%", "transition":".3s"});
+                        $("#1l16").css({"font-size":"160%", "transition":".3s"});
+                    }, 36600));
+                    timeouts.push(setTimeout(function(){
+                        $("#1l16").css({"font-size":"100%", "transition":".3s"});
+                        $("#1l17").css({"font-size":"160%", "transition":".3s"});
+                    }, 39700));
+                    timeouts.push(setTimeout(function(){
+                        $("#1l17").css({"font-size":"100%", "transition":".3s"});
+                        $("#1l18").css({"font-size":"160%", "transition":".3s"});
+                    }, 41300));
+                    timeouts.push(setTimeout(function(){
+                        $("#1l18").css({"font-size":"100%", "transition":".3s"});
+                        $("#1l19").css({"font-size":"160%", "transition":".3s"});
+                    }, 44200));
+                    timeouts.push(setTimeout(function(){
+                        $("#1l19").css({"font-size":"100%", "transition":".3s"});
+                        $("#1l20").css({"font-size":"160%", "transition":".3s"});
+                    }, 47000));
+                    timeouts.push(setTimeout(function(){
+                        $("#1l20").css({"font-size":"100%", "transition":".3s"});
+                        $("#1l21").css({"font-size":"160%", "transition":".3s"});
+                    }, 51600));
+                    timeouts.push(setTimeout(function(){
+                        $("#1l21").css({"font-size":"100%", "transition":".3s"});
+                        $("#1l22").css({"font-size":"160%", "transition":".3s"});
+                    }, 56000));
+                    timeouts.push(setTimeout(function(){
+                        $("#1l22").css({"font-size":"100%", "transition":".3s"});
+                    }, 61000));
+                }
+                else if (this.className.match("A")) {
+                    timeouts.push(setTimeout(function(){
+                        $("#2l1").css({"font-size":"160%", "transition":".3s"});
+                    }, 100));
+                    timeouts.push(setTimeout(function(){
+                        $("#2l1").css({"font-size":"100%", "transition":".3s"});
+                        $("#2l2").css({"font-size":"160%", "transition":".3s"});
+                    }, 6700));
+                    timeouts.push(setTimeout(function(){
+                        $("#2l2").css({"font-size":"100%", "transition":".3s"});
+                        $("#2l3").css({"font-size":"160%", "transition":".3s"});
+                    }, 12000));
+                    timeouts.push(setTimeout(function(){
+                        $("#2l3").css({"font-size":"100%", "transition":".3s"});
+                        $("#2l4").css({"font-size":"160%", "transition":".3s"});
+                    }, 15500));
+                    timeouts.push(setTimeout(function(){
+                        $("#2l4").css({"font-size":"100%", "transition":".3s"});
+                        $("#2l5").css({"font-size":"160%", "transition":".3s"});
+                    }, 19000));
+                    timeouts.push(setTimeout(function(){
+                        $("#2l5").css({"font-size":"100%", "transition":".3s"});
+                        $("#2l6").css({"font-size":"160%", "transition":".3s"});
+                    }, 22600));
+                    timeouts.push(setTimeout(function(){
+                        $("#2l6").css({"font-size":"100%", "transition":".3s"});
+                        $("#2l7").css({"font-size":"160%", "transition":".3s"});
+                    }, 25900));
+                    timeouts.push(setTimeout(function(){
+                        $("#2l7").css({"font-size":"100%", "transition":".3s"});
+                        $("#2l8").css({"font-size":"160%", "transition":".3s"});
+                    }, 27800));
+                    timeouts.push(setTimeout(function(){
+                        $("#2l8").css({"font-size":"100%", "transition":".3s"});
+                    }, 29000));
+                }
+                else if (this.className.match("Q")) {
+                    timeouts.push(setTimeout(function(){
+                        $("#3l1").css({"font-size":"160%", "transition":".3s"});
+                    }, 400));
+                    timeouts.push(setTimeout(function(){
+                        $("#3l1").css({"font-size":"100%", "transition":".3s"});
+                        $("#3l2").css({"font-size":"160%", "transition":".3s"});
+                    }, 5800));
+                    timeouts.push(setTimeout(function(){
+                        $("#3l2").css({"font-size":"100%", "transition":".3s"});
+                        $("#3l3").css({"font-size":"160%", "transition":".3s"});
+                    }, 8890));
+                    timeouts.push(setTimeout(function(){
+                        $("#3l3").css({"font-size":"100%", "transition":".3s"});
+                        $("#3l4").css({"font-size":"160%", "transition":".3s"});
+                    }, 16560));
+                    timeouts.push(setTimeout(function(){
+                        $("#3l4").css({"font-size":"100%", "transition":".3s"});
+                        $("#3l5").css({"font-size":"160%", "transition":".3s"});
+                    }, 20240));
+                    timeouts.push(setTimeout(function(){
+                        $("#3l5").css({"font-size":"100%", "transition":".3s"});
+                        $("#3l6").css({"font-size":"160%", "transition":".3s"});
+                    }, 22690));
+                    timeouts.push(setTimeout(function(){
+                        $("#3l6").css({"font-size":"100%", "transition":".3s"});
+                        $("#3l7").css({"font-size":"160%", "transition":".3s"});
+                    }, 28120));
+                    timeouts.push(setTimeout(function(){
+                        $("#3l7").css({"font-size":"100%", "transition":".3s"});
+                        $("#3l8").css({"font-size":"160%", "transition":".3s"});
+                    }, 33310));
+                    timeouts.push(setTimeout(function(){
+                        $("#3l8").css({"font-size":"100%", "transition":".3s"});
+                        $("#3l9").css({"font-size":"160%", "transition":".3s"});
+                    }, 39650));
+                    timeouts.push(setTimeout(function(){
+                        $("#3l9").css({"font-size":"100%", "transition":".3s"});
+                        $("#3l10").css({"font-size":"160%", "transition":".3s"});
+                    }, 44710));
+                    timeouts.push(setTimeout(function(){
+                        $("#3l10").css({"font-size":"100%", "transition":".3s"});
+                    }, 45910));
+                }
+                else if (this.className.match("U")) {
+                    timeouts.push(setTimeout(function(){
+                        $("#4l1").css({"font-size":"160%", "transition":".3s"});
+                    }, 1400));
+                    timeouts.push(setTimeout(function(){
+                        $("#4l1").css({"font-size":"100%", "transition":".3s"});
+                        $("#4l2").css({"font-size":"160%", "transition":".3s"});
+                    }, 5000));
+                    timeouts.push(setTimeout(function(){
+                        $("#4l2").css({"font-size":"100%", "transition":".3s"});
+                        $("#4l3").css({"font-size":"160%", "transition":".3s"});
+                    }, 8500));
+                    timeouts.push(setTimeout(function(){
+                        $("#4l3").css({"font-size":"100%", "transition":".3s"});
+                        $("#4l4").css({"font-size":"160%", "transition":".3s"});
+                    }, 11300));
+                    timeouts.push(setTimeout(function(){
+                        $("#4l4").css({"font-size":"100%", "transition":".3s"});
+                    }, 14500));
+                }
+                else if (this.className.match("E")) {
+                    timeouts.push(setTimeout(function(){
+                        $("#5l1").css({"font-size":"160%", "transition":".3s"});
+                    }, 400));
+                    timeouts.push(setTimeout(function(){
+                        $("#5l1").css({"font-size":"100%", "transition":".3s"});
+                        $("#5l2").css({"font-size":"160%", "transition":".3s"});
+                    }, 5850));
+                    timeouts.push(setTimeout(function(){
+                        $("#5l2").css({"font-size":"100%", "transition":".3s"});
+                        $("#5l3").css({"font-size":"160%", "transition":".3s"});
+                    }, 9990));
+                    timeouts.push(setTimeout(function(){
+                        $("#5l3").css({"font-size":"100%", "transition":".3s"});
+                        $("#5l4").css({"font-size":"160%", "transition":".3s"});
+                    }, 11280));
+                    timeouts.push(setTimeout(function(){
+                        $("#5l4").css({"font-size":"100%", "transition":".3s"});
+                        $("#5l5").css({"font-size":"160%", "transition":".3s"});
+                    }, 16520));
+                    timeouts.push(setTimeout(function(){
+                        $("#5l5").css({"font-size":"100%", "transition":".3s"});
+                        $("#5l6").css({"font-size":"160%", "transition":".3s"});
+                    }, 19800));
+                    timeouts.push(setTimeout(function(){
+                        $("#5l6").css({"font-size":"100%", "transition":".3s"});
+                        $("#5l7").css({"font-size":"160%", "transition":".3s"});
+                    }, 22120));
+                }
+                else if (this.className.match("L")) {
+                    timeouts.push(setTimeout(function(){
+                        $("#6l1").css({"font-size":"160%", "transition":".3s"});
+                    }, 400));
+                    timeouts.push(setTimeout(function(){
+                        $("#6l1").css({"font-size":"100%", "transition":".3s"});
+                        $("#6l2").css({"font-size":"160%", "transition":".3s"});
+                    }, 5050));
+                    timeouts.push(setTimeout(function(){
+                        $("#6l2").css({"font-size":"100%", "transition":".3s"});
+                        $("#6l3").css({"font-size":"160%", "transition":".3s"});
+                    }, 7440));
+                    timeouts.push(setTimeout(function(){
+                        $("#6l3").css({"font-size":"100%", "transition":".3s"});
+                        $("#6l4").css({"font-size":"160%", "transition":".3s"});
+                    }, 11950));
+                    timeouts.push(setTimeout(function(){
+                        $("#6l4").css({"font-size":"100%", "transition":".3s"});
+                        $("#6l5").css({"font-size":"160%", "transition":".3s"});
+                    }, 17390));
+                    timeouts.push(setTimeout(function(){
+                        $("#6l5").css({"font-size":"100%", "transition":".3s"});
+                    }, 19890));
+                }
+
+            }else if (this.className.match("fami")){
+                $(idVideo).prop("volume", 0.5);
+                $(idVideo).get(0).play();
+            }
+        });
+
+
+
+        var srcRaiz = "img/Inside/";
+        var NomeFile = 0;
+        var ext = [".jpg",".gif",".png",".webm"];
+        var pasta = ["AM/","Avatar/","Awalk/","Batata/","Bclub/","Bvalentine/","DN/","Frank/","Friends/","HP/","IrmaoUrso/","Jinx/","KillBill/","Lana/","Leona/","Lilo/","Lucifer/","Monstros/","Naruto/","NBHD/","Percy/","Psico/","Shrek/","Skins/","SoA/","Switched/","TeenWolf/","TheGuardian/","Touro/","Twiter/","1975/", "dog/"];
+        var divCorrespondente = ["#modalArctic_Monkeys","#modalAvatar","#modalawalk","#modalbatata","#modalclube_dos_5","#modalBlue_Valentine","#modalDN","#modalFrank_Ocean","#modalFriends","#modalharry_potter","#modalirmao_urso","#modalJinx","#modalkill_bill","#modalLana_del_Rey","#modalLeona","#modallilo","#modalLucifer","#modalmonstros","#modalNaruto","#modalThe_NBHD","#modalpercy","#modalpsico","#modalShrek","#modalSkins","#modalSOA","#modalSAB","#modalTeen_Wolf","#modalThe_guadiam","#modaltouro","#modalTwitter","#modalThe_1975","#modaldog"];
+        for (i=0;i<pasta.length;i++){
+            for (NomeFile=0;NomeFile<30;NomeFile++){
+                for(i2=0;i2<ext.length;i2++){
+                    var srcCompleta = srcRaiz+pasta[i]+NomeFile+ext[i2];
+                    if(ext[i2]==".webm"){
+                        $(divCorrespondente[i]+' > .modal-content').append(`<video src="`+srcCompleta+`" muted loop autoplay style="width: 400px;display: block;margin-left: auto;margin-right: auto;margin-bottom: 25px" onerror="this.style.display = 'none'"></video>`);
+                    }
+                    $(divCorrespondente[i]+' > .modal-content').append(`<img src="`+srcCompleta+`" style="width: 400px;display: block;margin-left: auto;margin-right: auto;margin-bottom: 25px" onerror="this.style.display = 'none'">`);
+                }
+            }
+        }
+    });
+
+
+</script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>

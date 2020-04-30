@@ -1,0 +1,56 @@
+
+#R {
+    background-image: url("R - Nights#png");
+    position: absolute;
+    left: 161px;
+    top: 190px;
+    width: 181px;
+    height: 233px;
+    z-index: 45;
+}
+
+#A {
+    background-image: url("A - The Beach#png");
+    position: absolute;
+    left: 339px;
+    top: 186px;
+    width: 192px;
+    height: 238px;
+    z-index: 44;
+}
+#Q{
+    background-image: url("Q - fallingforyou#png");
+    position: absolute;
+    left: 515px;
+    top: 190px;
+    width: 234px;
+    height: 233px;
+    z-index: 43;
+}
+#U {
+    background-image: url("U - I Wanna be yours#png");
+    position: absolute;
+    left: 756px;
+    top: 190px;
+    width: 184px;
+    height: 234px;
+    z-index: 42;
+}
+#E {
+    background-image: url("E - Born to die#png");
+    position: absolute;
+    left: 940px;
+    top: 190px;
+    width: 160px;
+    height: 234px;
+    z-index: 41;
+}
+#L {
+    background-image: url("L - Self Control#png");
+    position: absolute;
+    left: 1107px;
+    top: 188px;
+    width: 132px;
+    height: 235px;
+    z-index: 40;
+}
